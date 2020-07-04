@@ -1,6 +1,7 @@
-import React, {Fragment} from 'react'
+import React, { Fragment } from 'react'
 import styled from 'styled-components'
 import Navbuttons from './Navbutton'
+import { NavLink } from 'react-router-dom'
 
 const Background = styled.div`
     display: inline-flex;
@@ -14,6 +15,14 @@ const Background = styled.div`
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 `
 
+const Wrapper = styled.div`
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-right: 1rem;
+`
+
 const Title = styled.h1`
     display: flex;
     font-size: 170%;
@@ -22,17 +31,24 @@ const Title = styled.h1`
     padding: 1rem;
 `
 
-const Navbar = () => {
+export default function NavBar(props) {
     return (
         <Fragment>
             <Background>
-                <Title>
-                    Mathmatics
-                </Title>
-                <Navbuttons />
+                <NavLink style={{textDecoration: 'none'}} to="/">
+                    <Title>
+                        {props.title}
+                    </Title>
+                </NavLink>
+                <Wrapper>
+                    <NavLink style={{textDecoration: 'none'}} to="/profile">
+                        <Navbuttons context="Profile" />
+                    </NavLink>
+                    <NavLink style={{textDecoration: 'none'}} to="/blog">
+                        <Navbuttons context="Blog" />
+                    </NavLink>
+                </Wrapper>
             </Background>
         </Fragment>
     );
 }
-
-export default Navbar
