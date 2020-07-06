@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
-import NavBar from '../components/NavBar'
+import NavBar from '../components/navbar'
 
 const TitleText = styled.span`
     font-size: 50px;
@@ -35,7 +35,7 @@ const StyledDiv = styled.div`
 export default function Home() {
     return (
         <Fragment>
-            <NavBar title="Mathmatics" />
+            <NavBar title="Harugatto" />
             <StyledDiv>
                 <TitleWrapper>
                     <TitleText>

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
-import NavBar from '../components/NavBar'
+import NavBar from '../components/navbar'
 import profileImage from '../asset/Profile.jpg'
 
 const ProfileWrapper = styled.div`
@@ -14,6 +14,8 @@ const ProfileWrapper = styled.div`
 const ImageWrapper = styled.div`
     display: flex;
     width: 50vw;
+    flex-direction: row-reverse;
+    margin-right: 10vw;
 `
 
 const ProfileImage = styled.img`
@@ -22,7 +24,6 @@ const ProfileImage = styled.img`
     width: 300px;
     border-radius: 50%;
     object-fit: cover;
-    margin: auto;
 `
 
 const ProfileTextWrapper = styled.div`
@@ -33,32 +34,40 @@ const ProfileTextWrapper = styled.div`
 `
 
 const NameText = styled.span`
+    display: flex;
     font-size: 50px;
     font-weight: bold;
-    margin: 0.2em;
+    margin: 1em 0 0.5em 0;
     background: linear-gradient(to left, #833ab4, #fd1d1d, #fcb045);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
+    height: 40vh;
+    align-items: flex-end;
 `
 
 const Text = styled.span`
+    font-family: "Noto Sans KR";
+    height: 57vh;
 `
 
 export default function Profile() {
     return (
         <Fragment>
-            <NavBar title="Mathmatics"/>
+            <NavBar title="Harugatto"/>
             <ProfileWrapper>
                 <ImageWrapper>
                     <ProfileImage src={ profileImage } alt="Proifle IMG"/>
                 </ImageWrapper>
                 <ProfileTextWrapper>
                     <NameText>
-                        aaa
+                        Profile
                     </NameText>
                     <Text>
-                        aaa
+                        😃 KDMHS 18th Hacking Defence<br />
+                        🎂 2003.04.19 <br />
+                        💡 TRUST - Hacking Defence Club <br />
+                        💡 BMW - Benedu Math Worriors <br />
+                        🏆 The Hacking Championship Junior 2019 - 3rd Prize 
                     </Text>
                 </ProfileTextWrapper>
             </ProfileWrapper>
