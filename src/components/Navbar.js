@@ -7,7 +7,7 @@ const Background = styled.div`
     display: inline-flex;
     justify-content: start;
     align-items: center;
-    height: 8vh;
+    height: 6vh;
     width: 100vw;
     margin: 0;
     background: #833ab4;  /* fallback for old browsers */
