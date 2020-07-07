@@ -58,7 +58,7 @@ export default function BlogPost(props) {
 
     return (
         <Fragment>
-            <NavBar title="Harugatto" />
+            <NavBar title="😘" />
             <NotionRenderer fullPage blockMap={blockMap} />
             <BackButtonWrapper>
             <NavLink to="/blog">

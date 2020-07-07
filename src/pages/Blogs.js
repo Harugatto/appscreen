@@ -6,17 +6,30 @@ const ListWrapper = styled.div`
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 15vh;
+    height: 25vh;
 `
 
 const PostList = styled.div`
     display: flex;
-    background-color: #f0f0f0;
+    background-color: white;
     border-radius: 8px;
     width: 60vw;
-    margin: 0 20vw 0 20vw;
+    margin: 0 20vw 5vh 20vw;
     align-items: center;
     padding-left: 2vw;
+    box-shadow: 1.5px 1.5px 5px 0px rgba(107,107,107,1);
+
+    &:hover {
+        background-color: #bababa;
+    }
+`
+
+const InfoWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: flex-start;
+    height: 20vh;
 `
 
 const StyledButton = styled.a`
@@ -28,10 +41,12 @@ const ArticleTitle = styled.h1`
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Noto Sans KR";
+    margin-top: 0.5em;
 `
 
 const ArticleInfo = styled.p`
     font-family: "Noto Sans KR";
+    margin-top: 0.1px;
 `
 
 const PlaceHolder = styled.span`
@@ -42,16 +57,15 @@ const PlaceHolder = styled.span`
 function Article(props) {
     return (
         <Fragment>
-        <PlaceHolder />
-        <ListWrapper>
-            <PostList>
-            <StyledButton href={props.link} style={{ textDecoration: 'none' }}>
-                <ArticleTitle>{props.title}</ArticleTitle>
-                <ArticleInfo>{props.description}</ArticleInfo>
-                <ArticleInfo>{props.date}</ArticleInfo>
-            </StyledButton>
-            </PostList>
-        </ListWrapper>
+                <StyledButton href={props.link} style={{ textDecoration: 'none' }}>
+                    <PostList>
+                        <InfoWrapper>
+                            <ArticleTitle>{props.title}</ArticleTitle>
+                            <ArticleInfo>{props.description}</ArticleInfo>
+                            <ArticleInfo>{props.date}</ArticleInfo>
+                        </InfoWrapper>
+                    </PostList>
+                </StyledButton>
         </Fragment>
     )
 }
@@ -73,7 +87,8 @@ export default function Blogs(props) {
 
     return (
         <Fragment>
-            <NavBar title="Harugatto" />
+            <NavBar title="😘" />
+            <PlaceHolder />
             <div>
             {tableData.map((blog, index) => {
                 return (

@@ -16,6 +16,7 @@ const Background = styled.div`
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     z-index: 100;
+    box-shadow: 1.5px 1.5px 5px 0px rgba(107,107,107,1);
 `
 
 const Wrapper = styled.div`
@@ -31,7 +32,7 @@ const Title = styled.h1`
     font-size: 170%;
     color: white;
     font-family: "Noto Sans KR";
-    padding: 1rem 1rem 1.5rem 1rem;
+    padding: 1rem 1rem 1.3rem 1rem;
 `
 
 export default function NavBar(props) {

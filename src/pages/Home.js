@@ -37,7 +37,7 @@ const StyledDiv = styled.div`
 export default function Home() {
     return (
         <Fragment>
-            <NavBar title="Harugatto" />
+            <NavBar title="😘" />
             <StyledDiv>
                 <TitleWrapper>
                     <TitleText>

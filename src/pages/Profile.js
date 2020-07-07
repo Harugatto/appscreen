@@ -26,6 +26,7 @@ const ProfileImageBackground = styled.div`
     background: #833ab4;
     background: -webkit-linear-gradient(to right top, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right top, #fcb045, #fd1d1d, #833ab4);
+    box-shadow: 1px 1px 5px 0px rgba(107,107,107,1);
 `
 
 const ProfileImage = styled.img`
@@ -64,7 +65,7 @@ const Text = styled.span`
 export default function Profile() {
     return (
         <Fragment>
-            <NavBar title="Harugatto"/>
+            <NavBar title="😘"/>
             <ProfileWrapper>
                 <ImageWrapper>
                     <ProfileImageBackground>
