@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/appscreen_eval/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/appscreen_eval/static/js/main.719cb173.chunk.js",
+    "main.js.map": "/appscreen_eval/static/js/main.719cb173.chunk.js.map",
+    "runtime-main.js": "/appscreen_eval/static/js/runtime-main.b5014ad8.js",
+    "runtime-main.js.map": "/appscreen_eval/static/js/runtime-main.b5014ad8.js.map",
+    "static/css/2.14e53b4e.chunk.css": "/appscreen_eval/static/css/2.14e53b4e.chunk.css",
+    "static/js/2.306e82e7.chunk.js": "/appscreen_eval/static/js/2.306e82e7.chunk.js",
+    "static/js/2.306e82e7.chunk.js.map": "/appscreen_eval/static/js/2.306e82e7.chunk.js.map",
+    "index.html": "/appscreen_eval/index.html",
+    "precache-manifest.b7f91cb371051844db3d1f7de1956f36.js": "/appscreen_eval/precache-manifest.b7f91cb371051844db3d1f7de1956f36.js",
+    "service-worker.js": "/appscreen_eval/service-worker.js",
+    "static/css/2.14e53b4e.chunk.css.map": "/appscreen_eval/static/css/2.14e53b4e.chunk.css.map",
+    "static/css/main.5ecd60fb.chunk.css.map": "/appscreen_eval/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.306e82e7.chunk.js.LICENSE.txt": "/appscreen_eval/static/js/2.306e82e7.chunk.js.LICENSE.txt",
+    "static/media/Profile.jpg": "/appscreen_eval/static/media/Profile.62e6d1b1.jpg",
+    "static/media/back.png": "/appscreen_eval/static/media/back.b5ad2b13.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5014ad8.js",
+    "static/css/2.14e53b4e.chunk.css",
+    "static/js/2.306e82e7.chunk.js",
+    "static/css/main.5ecd60fb.chunk.css",
+    "static/js/main.719cb173.chunk.js"
+  ]
+}
