@@ -5,14 +5,16 @@ import { NavLink } from 'react-router-dom'
 
 const Background = styled.div`
     display: inline-flex;
+    position: absolute;
+    top: 0;
     justify-content: start;
     align-items: center;
     height: 6vh;
     width: 100vw;
     margin: 0;
-    background: #833ab4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
 `
 
 const Wrapper = styled.div`
@@ -28,7 +30,7 @@ const Title = styled.h1`
     font-size: 170%;
     color: white;
     font-family: "Noto Sans KR";
-    padding: 1rem;
+    padding: 1rem 1rem 1.5rem 1rem;
 `
 
 export default function NavBar(props) {

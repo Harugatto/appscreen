@@ -18,12 +18,22 @@ const ImageWrapper = styled.div`
     margin-right: 10vw;
 `
 
+const ProfileImageBackground = styled.div`
+    display: flex;
+    height: 320px;
+    width: 320px;
+    border-radius: 50%;
+    background: #833ab4;
+    background: -webkit-linear-gradient(to right top, #fcb045, #fd1d1d, #833ab4);
+    background: linear-gradient(to right top, #fcb045, #fd1d1d, #833ab4);
+`
+
 const ProfileImage = styled.img`
     display: flex;
+    margin: 10px;
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    border: 10px solid #f0f0f0;
     object-fit: cover;
 `
 
@@ -57,7 +67,9 @@ export default function Profile() {
             <NavBar title="Harugatto"/>
             <ProfileWrapper>
                 <ImageWrapper>
-                    <ProfileImage src={ profileImage } alt="Proifle IMG"/>
+                    <ProfileImageBackground>
+                        <ProfileImage src={ profileImage } alt="Proifle IMG"/>
+                    </ProfileImageBackground>
                 </ImageWrapper>
                 <ProfileTextWrapper>
                     <NameText>
@@ -66,6 +78,7 @@ export default function Profile() {
                     <Text>
                         😃 KDMHS 18th Hacking Defence<br />
                         🎂 2003.04.19 <br />
+                        ✉️ jihojiho2003@gmail.com<br />
                         💡 TRUST - Hacking Defence Club <br />
                         💡 BMW - Benedu Math Worriors <br />
                         🏆 The Hacking Championship Junior 2019 - 3rd Prize 

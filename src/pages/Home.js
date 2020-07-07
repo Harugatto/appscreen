@@ -25,6 +25,8 @@ const MainText = styled.span`
 
 const StyledDiv = styled.div`
     display: flex;
+    position: absolute;
+    bottom: 0px;
     flex-direction: column;
     justify-content: center;
     align-items: center;

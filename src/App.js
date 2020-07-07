@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Switch, Redirect } from 'react-router-dom'
-import { Blog, Profile, Home, NotFound, Blogs, BlogPost } from './pages'
+import { Profile, Home, NotFound, Blogs, BlogPost } from './pages'
 
 function App() {
   return (
