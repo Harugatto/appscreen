@@ -62,7 +62,7 @@ export default function Blogs(props) {
     useEffect(() => {
         async function getTableData() {
         const notionTableData = await fetch(
-            "https://notion-api.splitbee.io/v1/table/4a900f47ce9143b59695cf25d8461893"
+            "https://notion-api.splitbee.io/v1/table/1cede97c79674f2c993bafbadb46122f"
         ).then(res => res.json())
 
         setTableData(notionTableData.filter(blog => blog.status === 'live'));

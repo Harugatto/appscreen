@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 
 const Background = styled.div`
     display: inline-flex;
-    position: absolute;
+    position: fixed;
     top: 0;
     justify-content: start;
     align-items: center;
@@ -15,6 +15,7 @@ const Background = styled.div`
     background: #833ab4;
     background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
     background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    z-index: 100;
 `
 
 const Wrapper = styled.div`
@@ -37,13 +38,11 @@ export default function NavBar(props) {
     return (
         <Fragment>
             <Background>
-                <NavLink style={{textDecoration: 'none'}} to="/">
-                    <Title>
-                        {props.title}
-                    </Title>
-                </NavLink>
+                <Title>
+                    {props.title}
+                </Title>
                 <Wrapper>
-                    <NavLink style={{textDecoration: 'none'}} to="/profile">
+                    <NavLink style={{textDecoration: 'none'}} to="/">
                         <Navbuttons context="Profile" />
                     </NavLink>
                     <NavLink style={{textDecoration: 'none'}} to="/blog">

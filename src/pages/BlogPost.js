@@ -19,7 +19,7 @@ const StyledBackButton = styled.img`
     align-items: flex-end;
 `
 const BackButtonWrapper = styled.div`
-    position: absolute;
+    position: fixed;
     bottom: 50px;
     right: 50px;
     display: flex;
@@ -33,7 +33,7 @@ export default function BlogPost(props) {
 
     const blogNameToId = async (blogSlug) => {
         const blogsDatabase = await fetch(
-            "https://notion-api.splitbee.io/v1/table/4a900f47ce9143b59695cf25d8461893"
+            "https://notion-api.splitbee.io/v1/table/1cede97c79674f2c993bafbadb46122f"
         ).then(res => res.json())
 
         try {
