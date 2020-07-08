@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e0aade3b6e5186fbea5d92ea42793cf4",
+    "revision": "b48856aa0e45836ed85f9ec56aff9b84",
     "url": "/appscreen/index.html"
   },
   {
-    "revision": "71b66c3f1ae9c789ecd9",
+    "revision": "8e9faa43fa9514118619",
     "url": "/appscreen/static/css/2.14e53b4e.chunk.css"
   },
   {
-    "revision": "f3cb6033cedbb227d623",
+    "revision": "bf370131bbabeb4f1f0a",
     "url": "/appscreen/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "71b66c3f1ae9c789ecd9",
-    "url": "/appscreen/static/js/2.a42c6b95.chunk.js"
+    "revision": "8e9faa43fa9514118619",
+    "url": "/appscreen/static/js/2.a2be360e.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/appscreen/static/js/2.a42c6b95.chunk.js.LICENSE.txt"
+    "url": "/appscreen/static/js/2.a2be360e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f3cb6033cedbb227d623",
-    "url": "/appscreen/static/js/main.aff37614.chunk.js"
+    "revision": "bf370131bbabeb4f1f0a",
+    "url": "/appscreen/static/js/main.23ca3ccd.chunk.js"
   },
   {
     "revision": "381f0538fd77ab719955",
