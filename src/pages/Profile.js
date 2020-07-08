@@ -82,7 +82,7 @@ export default function Profile() {
                         ✉️ jihojiho2003@gmail.com<br />
                         💡 TRUST - Hacking Defence Club <br />
                         💡 BMW - Benedu Math Worriors <br />
-                        🏆 The Hacking Championship Junior 2019 - 3rd Prize 
+                        🏆 The Hacking Championship Junior 2019 - 4th Prize 
                     </Text>
                 </ProfileTextWrapper>
             </ProfileWrapper>
