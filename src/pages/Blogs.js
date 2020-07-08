@@ -2,13 +2,6 @@ import React, { Fragment, useState, useEffect } from 'react'
 import NavBar from '../components/navbar'
 import styled from 'styled-components'
 
-const ListWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 25vh;
-`
-
 const PostList = styled.div`
     display: flex;
     background-color: white;

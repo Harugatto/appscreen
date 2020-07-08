@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
-import NavBar from '../components/navbar'
+import NavBar from '../components/Navbar'
 import profileImage from '../asset/Profile.jpg'
 
 const ProfileWrapper = styled.div`

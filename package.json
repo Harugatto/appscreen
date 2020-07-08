@@ -1,6 +1,6 @@
 {
-  "homepage": "https://harugatto.github.io/appscreen",
-  "name": "appscreen_eval",
+  "homepage": "https://harugatto.github.io/appscreen/",
+  "name": "appscreen",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
