@@ -77,9 +77,10 @@ export default function Profile() {
                         Profile
                     </NameText>
                     <Text>
-                        😃 KDMHS 18th Hacking Defence<br />
+                        👀 송지호 <br />
+                        😃 KDMHS 18th Hacking Defence <br />
                         🎂 2003.04.19 <br />
-                        ✉️ jihojiho2003@gmail.com<br />
+                        ✉️ jihojiho2003@gmail.com <br />
                         💡 TRUST - Hacking Defence Club <br />
                         💡 BMW - Benedu Math Worriors <br />
                         🏆 The Hacking Championship Junior 2019 - 4th Prize 
