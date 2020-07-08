@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import styled from 'styled-components'
-import NavBar from '../components/navbar'
+import NavBar from '../components/Navbar'
 
 const TitleText = styled.span`
     font-size: 50px;

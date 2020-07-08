@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import { NotionRenderer } from "react-notion";
-import NavBar from '../components/navbar';
+import NavBar from '../components/Navbar';
 import { NavLink } from 'react-router-dom';
 import Back from '../asset/back.png';
 import styled from 'styled-components';

@@ -1,5 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react'
-import NavBar from '../components/navbar'
+import NavBar from '../components/Navbar'
 import styled from 'styled-components'
 
 const PostList = styled.div`
@@ -23,6 +23,8 @@ const InfoWrapper = styled.div`
     align-content: space-around;
     justify-content: flex-start;
     height: 20vh;
+    width: 60vw;
+    overflow: hidden;
 `
 
 const StyledButton = styled.a`
