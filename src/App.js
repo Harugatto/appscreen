@@ -14,7 +14,7 @@ export default function App() {
                         <Route exact path="/blog" component={ Blogs } />
                         <Route exact path="/blog/:blogTitle" component={ BlogPost } />
                         <Route path="/notfound" component={ NotFound } />
-                        <Redirect path="*" to="/notfound"/>
+                        <Redirect path="/*" to="/notfound"/>
                     </Switch>
                 </CSSTransition>
             </TransitionGroup>
