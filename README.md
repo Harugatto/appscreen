@@ -7,8 +7,4 @@
 * Blog 페이지 완성
 * Profile 페이지 완성
 * Blog 관련 페이지 클래스 컴포넌트에서 함수 컴포넌트로 변환 완료
-
-### 해야할 일
-* Home 페이지 요소 추가
 * Blog 페이지 CMS연동
-* Router Transition 효과 적용하기
