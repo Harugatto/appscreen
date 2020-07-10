@@ -17,6 +17,7 @@ const StyledBackButton = styled.img`
     border: 3px solid #f0f0f0;
     padding: 10px;
     align-items: flex-end;
+    box-shadow: 1px 1px 3px 0px rgba(107,107,107,1);
 `
 const BackButtonWrapper = styled.div`
     position: fixed;
