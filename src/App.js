@@ -1,8 +1,8 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { Profile, NotFound, Blogs, BlogPost } from './pages'
-import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import { createGlobalStyle } from 'styled-components'
+import PageTransition from 'react-router-page-transition';
 
 const GlobalStyles = createGlobalStyle`
     @font-face {
@@ -45,17 +45,15 @@ const GlobalStyles = createGlobalStyle`
 export default function App() {
     return (
         <div>
-            <GlobalStyles />
-            <TransitionGroup>
-                <CSSTransition>
-                    <Switch>
-                        <Route exact path="/" component={ Profile } />
-                        <Route exact path="/blog" component={ Blogs } />
-                        <Route exact path="/blog/:blogTitle" component={ BlogPost } />
-                        <Route path="/notfound" component={ NotFound } />
-                    </Switch>
-                </CSSTransition>
-            </TransitionGroup>
+            <GlobalStyles />    
+            <PageTransition timeout={500}>
+                <Switch>
+                    <Route exact path="/" component={ Profile } />
+                    <Route exact path="/blog" component={ Blogs } />
+                    <Route exact path="/blog/:blogTitle" component={ BlogPost } />
+                    <Route path="/notfound" component={ NotFound } />
+                </Switch>
+            </PageTransition>
         </div>
     )
 }

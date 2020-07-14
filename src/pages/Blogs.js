@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import NavBar from '../components/Navbar'
 import styled from 'styled-components'
 
@@ -52,7 +53,7 @@ const PlaceHolder = styled.span`
 function Article(props) {
     return (
         <Fragment>
-                <StyledButton href={props.link} style={{ textDecoration: 'none' }}>
+            <Link to={props.link} style={{ textDecoration: 'none', color: 'black' }}>
                     <PostList>
                         <InfoWrapper>
                             <ArticleTitle>{props.title}</ArticleTitle>
@@ -60,7 +61,7 @@ function Article(props) {
                             <ArticleInfo>{props.date}</ArticleInfo>
                         </InfoWrapper>
                     </PostList>
-                </StyledButton>
+            </Link>
         </Fragment>
     )
 }
