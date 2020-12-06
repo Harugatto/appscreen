@@ -13,10 +13,10 @@ const Background = styled.div`
     width: 100vw;
     margin: 0;
     background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: -webkit-linear-gradient(90deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
+    background: linear-gradient(90deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
     z-index: 100;
-    box-shadow: 1.5px 1.5px 5px 0px rgba(107,107,107,1);
+    box-shadow: 1.5px 1.5px 10px 0px rgba(0, 0, 0, 0.5);
 `
 
 const Wrapper = styled.div`
@@ -44,10 +44,19 @@ export default function NavBar(props) {
                 </Title>
                 <Wrapper>
                     <NavLink style={{textDecoration: 'none'}} to="/">
+                        <Navbuttons context="Home" />
+                    </NavLink>
+                    <NavLink style={{textDecoration: 'none'}} to="/profile">
                         <Navbuttons context="Profile" />
                     </NavLink>
                     <NavLink style={{textDecoration: 'none'}} to="/blog">
                         <Navbuttons context="Blog" />
+                    </NavLink>
+                    <NavLink style={{textDecoration: 'none'}} to="/todo">
+                        <Navbuttons context="ToDo" />
+                    </NavLink>
+                    <NavLink style={{textDecoration: 'none'}} to="/NotFound">
+                        <Navbuttons context="404" />
                     </NavLink>
                 </Wrapper>
             </Background>

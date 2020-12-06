@@ -66,7 +66,7 @@ function Article(props) {
     )
 }
 
-export default function Blogs(props) {
+export default function Blogs() {
     const [tableData, setTableData] = useState([])
 
     useEffect(() => {

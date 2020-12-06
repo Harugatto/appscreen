@@ -24,9 +24,9 @@ const ProfileImageBackground = styled.div`
     width: 320px;
     border-radius: 50%;
     background: #833ab4;
-    background: -webkit-linear-gradient(to right top, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right top, #fcb045, #fd1d1d, #833ab4);
-    box-shadow: 1px 1px 5px 0px rgba(107,107,107,1);
+    background: -webkit-linear-gradient(90deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
+    background: linear-gradient(90deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
+    box-shadow: 1.5px 1.5px 10px 0px rgba(0, 0, 0, 0.5);
 `
 
 const ProfileImage = styled.img`
@@ -50,10 +50,11 @@ const NameText = styled.span`
     font-size: 50px;
     font-weight: bold;
     margin: 1em 0 0.5em 0;
-    background: linear-gradient(to left, #833ab4, #fd1d1d, #fcb045);
+    background: linear-gradient(90deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     height: 40vh;
+    width: 8.3vw;
     align-items: flex-end;
 `
 
