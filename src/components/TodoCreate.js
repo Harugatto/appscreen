@@ -31,6 +31,7 @@ const CircleButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 1.5px 1.5px 10px 0px rgba(0, 0, 0, 0.5);
 
   transition: 0.125s all ease-in;
   ${props =>

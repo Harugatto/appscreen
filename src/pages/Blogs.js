@@ -11,10 +11,10 @@ const PostList = styled.div`
     margin: 0 20vw 5vh 20vw;
     align-items: center;
     padding-left: 2vw;
-    box-shadow: 1.5px 1.5px 5px 0px rgba(107,107,107,1);
+    box-shadow: 1.5px 1.5px 10px 0px rgba(0, 0, 0, 0.5);
 
     &:hover {
-        background-color: #bababa;
+        background-color: rgba(0, 0, 0, 0.05);
     }
 `
 
@@ -33,11 +33,12 @@ const StyledButton = styled.a`
 `
 
 const ArticleTitle = styled.h1`
-    background: linear-gradient(to left, #833ab4, #fd1d1d, #fcb045);
+    background: linear-gradient(90deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: "Noto Sans KR";
     margin-top: 0.5em;
+    width: 450px;
 `
 
 const ArticleInfo = styled.p`
@@ -71,11 +72,11 @@ export default function Blogs() {
 
     useEffect(() => {
         async function getTableData() {
-        const notionTableData = await fetch(
-            "https://notion-api.splitbee.io/v1/table/1cede97c79674f2c993bafbadb46122f"
-        ).then(res => res.json())
+            const notionTableData = await fetch(
+                "https://notion-api.splitbee.io/v1/table/1cede97c79674f2c993bafbadb46122f"
+            ).then(res => res.json())
 
-        setTableData(notionTableData.filter(blog => blog.status === 'live'));
+            setTableData(notionTableData.filter(blog => blog.status === 'live'))
         }
 
         getTableData();
