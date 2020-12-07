@@ -58,8 +58,8 @@ function Article(props) {
                     <PostList>
                         <InfoWrapper>
                             <ArticleTitle>{props.title}</ArticleTitle>
-                            <ArticleInfo>{props.description}</ArticleInfo>
-                            <ArticleInfo>{props.date}</ArticleInfo>
+                            <ArticleInfo>✍️ {props.description}</ArticleInfo>
+                            <ArticleInfo>📆 {props.date}</ArticleInfo>
                         </InfoWrapper>
                     </PostList>
             </Link>

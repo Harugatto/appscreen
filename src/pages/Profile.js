@@ -24,8 +24,8 @@ const ProfileImageBackground = styled.div`
     width: 320px;
     border-radius: 50%;
     background: #833ab4;
-    background: -webkit-linear-gradient(90deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
-    background: linear-gradient(90deg, #ffa745 0%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
+    background: -webkit-linear-gradient(135deg, #ffa745 10%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
+    background: linear-gradient(135deg, #ffa745 10%, #fe869f 30%, #ef7ac8 45%, #a083ed 70%, #43aeff 85%);
     box-shadow: 1.5px 1.5px 10px 0px rgba(0, 0, 0, 0.5);
 `
 
