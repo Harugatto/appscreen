@@ -24,7 +24,7 @@ export default function SecondHome() {
             <NavLink style={{textDecoration: 'none'}} to="/">
                 <StyledDiv>
                     <iframe
-                        src="https://tv.naver.com/embed/17064293?autoPlay=true" 
+                        src="https://www.youtube.com/embed/eQPDSegzu9E" 
                         frameborder="0" allow="accelerometer; 
                         autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen="allowfullscreen"
